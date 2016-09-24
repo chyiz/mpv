@@ -54,6 +54,7 @@ static CGLError test_gl_version(struct vo *vo,
     CGLPixelFormatAttribute attrs[] = {
         kCGLPFAOpenGLProfile,
         (CGLPixelFormatAttribute) version,
+        kCGLPFABackingStore,
         // kCGLPFADoubleBuffer,
         kCGLPFAAccelerated,
         #if MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_8
